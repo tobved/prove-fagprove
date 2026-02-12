@@ -13,7 +13,7 @@ Dette dokumentet beskriver den tekniske oppbyggingen av reservasjonssystemet for
 
 <details>
     <summary>Oppsummering av applikasjonen</summary>
-    <p> Applikasjonen er et komplett bookingsystem for en restaurant med begrenset kapasitet (12 gjester). Gjester kan reservere bord basert på ulike menyer med ulik varighet, motta SMS-bekreftelse og kansellere via unike lenker basert på Omega sin PrimKey. Restauranten har en oversikt for å se kundebookingene. Det er også apper for å endre innstillinger for kapasitet og administrere menyer. </p>
+    <p> Applikasjonen er et komplett bookingsystem for en restaurant med begrenset kapasitet (12 gjester). Gjester kan reservere bord basert på ulike menyer med ulik varighet, motta SMS-bekreftelse og kansellere reservasjoner. Restauranten har en oversikt for å se kundebookingene. Det er også apper for å endre innstillinger for kapasitet og administrere menyer. </p>
 </details>
 <details>
     <summary>Teknologier</summary>
