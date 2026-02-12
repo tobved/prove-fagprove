@@ -11,6 +11,10 @@ Jeg har begynt å sette opp datamodellen i SQL, men gjorde et avvik fra planen m
 Jeg har fått satt opp sikkerhetsmodellen og selve bookingappen idag
 </details>
 <details open>
-<summary>Mandag <sub>09/02</sub></summary>
+<summary>Tirsdag <sub>10/02</sub></summary>
 Jeg har blitt ferdig med ny-booking appen, en details app for kunder, og to setup apper for restaurant setup og for meny setup. jeg har også gjort ferdig endringsforslaget 
+</details>
+<details open>
+<summary>Onsdag <sub>11/02</sub></summary>
+Jeg har lagt til finpuss på ny booking appen og gjeste booking-visningen, og jeg har åpnet appene opp for anonym kontekst, og lagt til SMS varsling ved opprettelse og kansellering
 </details>
