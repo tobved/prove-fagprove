@@ -53,20 +53,20 @@ Dette dokumentet beskriver den tekniske oppbyggingen av reservasjonssystemet for
 </details>
 <details>
     <summary>Sikkerhet og Tilgangsstyring</summary>
-    <p>Løsningen benytter Omega 365s rollebaserte sikkerhetsmodell:</p>
+    <p>Løsningen benytter Omega 365s rollebaserte sikkerhetsmodell<br/>
+    Den består i grunn av roller, moduler og capabilities. Moduler er en liten gruppe med tilganger til tabeller og/eller apper, som f.eks. at man kan ha en modul for Booking, der man kan legge til Bookings-tabellen, og legge til new-booking appen, også kan man ha en annen modul for Admin som har tilgang til setup- apper og tabeller, og Bookings Register appen. En rolle består av flere moduler, men også capabilities som man kan legge til. Roller blir deretter satt til personer (en person kan ha flere roller) for å gi tilgang til funksjoner i systemet. Capabilities gir tilgang til en spesifikk funksjon i enten en app eller i SQL, som f.eks. tilgang til å kansellere kunder sine reservasjoner</p>
+    <img src="./images/systemdokumentasjon/sikkerhetsdatamodell.png">
+    <p>I CTP så kan man velge mellom to auteniseringsmetoder som oftest. Det er SQL innlogging og Microsoft autenisering. Ved SQL innlogging så sendes et kryptert kall til SQL serveren for å logge brukeren inn.
+    Microsoft autenisering sender brukeren til Microsoft sin innloggingsside og sender brukeren tilbake til Omega sammen med en token som gjør at Omega vet at du er logget inn.</p>
+    <p>I tillegg til det, anbefales tofaktor. I Omega fins det flere måter å sette dette, enten via SMS, Mail eller Time-based One Time Password (TOTP) og Passkeys.</p>
+    <p>Utover det så brukes også dette for tilganger i databasen</p>
     <ul>
         <li>
-            <b>Anonymous Access:</b> Gjester må ha tilgang til å kunne kjøre diverse prosedyrer og views som nevt over, og å kunne se sin egen spesifikke reservasjon via en unik GUID (som hindrer ID-guessing). Dette er gjort ved å inserte navn på databaseobjektene inn i stbl_WebSiteCMS_AnonymousAccess tabellen, slik at man ikke blir redirectet til login siden med en gang man går inn på new-booking appen
-        </li>
-        <li>
-            <b>Restaurant Admin:</b> Full tilgang til administrasjonsapper og setuptabeller.
-        </li>
-        <li>
-            <b>Restaurant Booking:</b> Full tilgang til å kunne se booking register.
-        </li>
-        <li>
             <b>Sikkerhet i databasen:</b>
-            Bruk av triggere og table-views (atbv) i 365 CTP for å validere tilganger/session context til den som gjør CRUD aksjoner mot databasen.
+            Bruk av triggere og table-views (atbv) i 365 CTP for å validere tilganger/session context til den som gjør CRUD aksjoner mot databasen. Dette er default i Omega sitt Appframe rammeverk for å sjekke om en person skal ha tilgang til en tabell, enten med bare read-only, edit, delete, eller en kombinasjon av de.
+        </li>
+        <li>
+            <b>Anonymous Access:</b> Gjester må ha tilgang til å kunne kjøre diverse prosedyrer og views som nevt over, og å kunne se sin egen spesifikke reservasjon via en unik GUID (som hindrer ID-guessing). Dette er gjort ved å inserte navn på databaseobjektene inn i stbl_WebSiteCMS_AnonymousAccess tabellen, slik at man ikke blir redirectet til login siden med en gang man går inn på new-booking appen
         </li>
     </ul>
 </details>
