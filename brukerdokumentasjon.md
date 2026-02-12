@@ -3,7 +3,7 @@
 <details open>
     <summary>Hvordan reservere et bord?</summary>
     <p>
-        For å lage ny reservasjon så kan man gå på <a href="https://fagprove.omega365.com/nt/restaurant-new-booking">denne nettsiden</a>. Her velger du hvor mange gjester som skal være med, hvilken meny du skal ha, og dato og klokkeslett for reservasjonen. Deretter får du opp et skjema der du legger inn navn og telefonnr. (og eventuelle kommentarer) og trykker "Submit" for å opprette reservasjonen.
+        For å lage ny reservasjon så kan man gå på <a href="https://fagprove.omega365.com/nt/restaurant-new-booking">denne nettsiden</a>. Her velger du hvor mange gjester som skal være med, hvilken meny du skal ha, og dato og klokkeslett for reservasjonen. Deretter får du opp et skjema der du legger inn navn og telefonnummer (og eventuelle kommentarer) og trykker "Submit" for å opprette reservasjonen.
     </p>
     <img src="./images/brukerdokumentasjon/oppretting-reservasjon.png" alt="Skjermbilde av bookingskjema"> 
 </details>
@@ -18,7 +18,7 @@
     <summary>Hvordan motta bekreftelse på SMS?</summary>
     <p>
         Når reservasjonen er lagret i systemet, vil du automatisk motta en SMS-bekreftelse på telefonnummeret du oppga. Denne inneholder detaljer om tidspunkt, og en lenke til oversikt av reservasjonen din der du kan se mer informasjon som f.eks. varighet på reservasjonen eller eventuelle kommentarer.
-        Du får også SMS bekreftelse ved kansellering av reservasjonen.
+        Du får også SMS-bekreftelse ved kansellering av reservasjonen.
     </p>
     <img style="width: 30%" src="./images/brukerdokumentasjon/sms.jpg" alt="Eksempel på SMS-bekreftelse"> 
 </details>
