@@ -71,7 +71,7 @@
 <details>
     <summary>Hvor kan jeg justere hvor mange kunder det er plass til?</summary>
     <p>
-        Dette kan justeres i "Restaurant Setup" i sidemenyen. Her kan du også endre åpningstid og lignende verdier.
+        Dette kan justeres i "Restaurant Setup" appen som ligger tilgjengelig i sidemenyen. Her kan du også endre åpningstid og lignende verdier.
     </p> 
     <img src="./images/brukerdokumentasjon/restaurant-setup.png" alt="Generelle instillinger for restauranten">
 </details>
