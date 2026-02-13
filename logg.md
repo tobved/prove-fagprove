@@ -18,3 +18,6 @@ Jeg har blitt ferdig med ny-booking appen, en details app for kunder, og to setu
 <summary>Onsdag <sub>11/02</sub></summary>
 Jeg har lagt til finpuss på ny booking appen og gjeste booking-visningen, og jeg har åpnet appene opp for anonym kontekst, og lagt til SMS varsling ved opprettelse og kansellering
 </details>
+<summary>Torsdag <sub>12/02</sub></summary>
+Jeg har jobbet med testrapporten, brukerdokumentasjonen og systemdokumentasjonen i dag, og har levert disse
+</details>
